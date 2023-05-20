@@ -491,6 +491,11 @@ set(MODE_CPPSRC
 )
 DeclareTargets(PTPM tpms)
 
+set(MODE_CPPSRC
+	proc_ism.cpp
+)
+DeclareTargets(PSIS ism)
+
 ### Wideband Spectrum
 
 set(MODE_CPPSRC

@@ -39,6 +39,7 @@
 #include "aprs_packet.hpp"
 #include "sonde_packet.hpp"
 #include "tpms_packet.hpp"
+#include "ism_packet.hpp"
 #include "jammer.hpp"
 #include "dsp_fir_taps.hpp"
 #include "dsp_iir.hpp"

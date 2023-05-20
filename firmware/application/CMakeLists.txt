@@ -148,6 +148,7 @@ set(CPPSRC
 	${COMMON}/sonde_packet.cpp
 	# ${COMMON}/test_packet.cpp
 	${COMMON}/tpms_packet.cpp
+	${COMMON}/ism_packet.cpp
 	${COMMON}/ui.cpp
 	${COMMON}/ui_focus.cpp
 	${COMMON}/ui_painter.cpp
@@ -280,7 +281,7 @@ set(CPPSRC
 	apps/ui_recon_settings.cpp
 	apps/ui_level.cpp  
 	apps/tpms_app.cpp
-	apps/tpms_app.cpp
+	apps/ism433_app.cpp
 	protocols/aprs.cpp
 	protocols/ax25.cpp
 	protocols/bht.cpp
