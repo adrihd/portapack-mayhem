@@ -1,3 +1,4 @@
 [submodule "hackrf"]
 	path = hackrf
-	url = https://github.com/mossmann/hackrf.git
+	url = https://github.com/adrihd/hackrf.git
+	branch = dev
