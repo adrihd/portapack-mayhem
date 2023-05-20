@@ -86,6 +86,7 @@
 #include "gps_sim_app.hpp"
 #include "soundboard_app.hpp"
 #include "tpms_app.hpp"
+#include "ism433_app.hpp"
 
 #include "core_control.hpp"
 #include "ui_looking_glass_app.hpp"
@@ -554,6 +555,7 @@ ReceiversMenuView::ReceiversMenuView(NavigationView& nav) {
 		{ "POCSAG",		ui::Color::green(),		&bitmap_icon_pocsag,		[&nav](){ nav.push<POCSAGAppView>(); } },
 		{ "Radiosnde",	ui::Color::green(),		&bitmap_icon_sonde,			[&nav](){ nav.push<SondeView>(); } },
 		{ "TPMS Cars",	ui::Color::green(),		&bitmap_icon_tpms,			[&nav](){ nav.push<TPMSAppView>(); } },
+		{ "ISM 433",	ui::Color::green(),		&bitmap_icon_ism433,		[&nav](){ nav.push<ISMAppView>(); } },
 		{ "Recon",		ui::Color::green(),		&bitmap_icon_scanner,		[&nav](){ nav.push<ReconView>(); } },
 		{ "Level",		ui::Color::green(),		&bitmap_icon_options_radio,	[&nav](){ nav.push<LevelView>(); } },
 		{ "APRS",		ui::Color::green(),		&bitmap_icon_aprs,			[&nav](){ nav.push<APRSRXView>(); } }

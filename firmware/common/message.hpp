@@ -109,6 +109,7 @@ public:
 		AudioSpectrum = 52,
 		APRSPacket = 53,
 		APRSRxConfigure = 54,
+		ISMPacket = 55,
 		MAX
 	};
 
@@ -343,6 +344,22 @@ public:
 	tpms::SignalType signal_type;
 	baseband::Packet packet;
 };
+
+class ISMPacketMessage : public Message {
+public:
+	constexpr ISMPacketMessage(
+		const ism::SignalType signal_type,
+		const baseband::Packet& packet
+	) : Message { ID::ISMPacket },
+		signal_type { signal_type },
+		packet { packet }
+	{
+	}
+
+	ism::SignalType signal_type;
+	baseband::Packet packet;
+};
+
 
 class POCSAGPacketMessage : public Message {
 public:
